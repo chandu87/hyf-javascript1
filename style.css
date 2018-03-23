@@ -1,3 +1,21 @@
 body{
     background:cornsilk;
+    margin:50px 120px;
 }
+#step2{
+    width:20%;
+height:100px;
+    background:rebeccapurple;
+    float: left;
+    color:white;
+}
+h2{
+    width:80%;
+    height:100px;
+    background: green;
+    float: right;
+    margin:0px;
+    text-align: center;
+    line-height: 100px;
+}
+
