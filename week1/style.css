@@ -1,21 +1,62 @@
 body{
-    background:cornsilk;
-    margin:50px 120px;
+    background:#E7F2F6;
+    margin:50px 180px;
+    font-size: 1.2em;
 }
-#step2{
+#fadetoggle-button,#fadeinout-button{
     width:20%;
-height:100px;
-    background:rebeccapurple;
+    height:100px;
+    background:#61C8ED;
     float: left;
     color:white;
 }
-h2{
-    width:80%;
+#fadetoggle-area{
+    width:75%;
     height:100px;
-    background: green;
+    background: #63B276;
     float: right;
     margin:0px;
     text-align: center;
     line-height: 100px;
+    margin-left:50px;
+}
+#fadetoggle-container{
+    display: flex;
 }
 
+#fadeinbutton,#fadeoutbutton{
+    width:200px;
+    height:50px;
+    background: #3DBDEC;
+    color:white;
+    font-size: 1em;
+    margin-right: 40px;
+    
+}
+img{
+    margin-top:20px;    
+    height:300px;
+}
+#step2-heading,#step1-heading{
+    cursor: pointer;
+    background:#61C8ED;
+    padding:20px;
+}
+#fadeinout-text{
+    width:70%;
+    height:100px;
+    float: right;
+    margin:0px;
+    text-align: center;
+    line-height: 100px;
+    margin-left:50px;
+    font-size:3em;
+}
+#fadeinout-toggle{
+    height:200px;
+}
+#fadetoggle-container,#fadeinout,#fadeinout-toggle{
+    border: 2px solid #9EE9EF;
+    padding:10px;
+    margin-bottom:15px;
+}

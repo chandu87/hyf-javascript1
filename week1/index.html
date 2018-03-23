@@ -3,7 +3,7 @@
 <html lang="en">
     <head>
         <title>First Website</title>
-        <link rel="stylesheet" href="./style.css"></link>
+        <link rel="stylesheet" href="./style.css"/>
         
 
     </head>
@@ -11,9 +11,10 @@
     <body>
         <!-- Step 1: JavaScript -->
         <h1>JavaScript : Week 1 </h1>
-        <h3>Step 1 :</h3>
+        <h3 id="step1-heading">Step 1 : Click on me Please *</h3>
+        <div id="step1-container">
         <hr>
-        <h5>Displaying integer</p>
+        <h5>Displaying integer</h5>
         <p id="dispint"></p>
         <hr>
         <h5>Round the number 7.25, to the nearest integer</h5>
@@ -36,15 +37,31 @@
         <hr>
         <h5>Compare inifities? (Not in Eyad's world) - does 6/0 == 10/0? How can you test this?</h5>
         <p id="compare"></p>
+    
             <hr>
-            
+        </div>          
         <!-- Step 2:
         Create a page that contains jQuery
         Make something fadeIn and fadeOut when you click on something -->
-        <h3>Step 2 :</h3>
-            <button id="step2">Click Me to Try Fade IN/OUT</button>
-            <h2>Green</h2>
-
+        <h3 id="step2-heading">Step 2 : Click on me Please *</h3>
+        <div id="step2-container">
+            <div id="fadetoggle-container">
+                <button id="fadetoggle-button">Click Me to Try Fade Toggle</button>
+                <div id="fadetoggle-area"></div>
+            </div>
+            <div id="fadeinout">  
+                <h3>Click the below button to fadein and fadeout the image</h3>
+                <button id="fadeinbutton">Fade in </button>
+                <button id="fadeoutbutton">Fade Out</button>
+                <br>
+                <img src="books.jpg" alt="javascript book">
+            </div>
+            <div id="fadeinout-toggle">
+                <h3>Using Fadein and Fadeout for making toggle with single button</h3>
+                <button id="fadeinout-button">Click me for Toggle text</button>
+                <h2 id="fadeinout-text">Welcome</h2>
+            </div>
+        </div>
 
             <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
         <script src="./step1.js"></script>
