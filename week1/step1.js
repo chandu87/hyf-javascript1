@@ -3,22 +3,22 @@ console.log("step 1");
 // Declare a variable x and initialize it with an integer.
 var number1 = 1;
 console.log(number1);
-document.getElementById("dispint").innerHTML=number1;
+document.getElementById("dispint").innerHTML = number1;
 
 // How do you round the number 7.25, to the nearest integer?
 var number2 = 7.25;
-console.log(number2 +" rounded value is "+ Math.round(number2));
-document.getElementById("roundnumber").innerHTML=Math.round(number2);
+console.log(number2 + " rounded value is " + Math.round(number2));
+document.getElementById("roundnumber").innerHTML = Math.round(number2);
 
 // Create a array called colors with the strings red, green and blue inside.
 var colors = ["red","green","blue"];
 console.log(colors);
-document.getElementById("colorsarray").innerHTML=colors;
+document.getElementById("colorsarray").innerHTML = colors;
 
 // How can you find the length of the string you just created?
 var firstName = "Claus";
 console.log(firstName.length);
-document.getElementById("stringlength").innerHTML="Length of string "+firstName+" is "+firstName.length;
+document.getElementById("stringlength").innerHTML = "Length of string " + firstName + " is " + firstName.length;
 
 // Write a program that checks the types of two variables and prints out SAME TYPE 
 // if they are the same type.
