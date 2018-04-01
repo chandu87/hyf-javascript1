@@ -55,6 +55,7 @@ console.log(3===3);
 
 // 6. Create a function called vehicle, like before, but takes another parameter called age, so that vehicle("blue", 1, 5) prints "a blue used car"
 
+//arrow functions
 var vehicle =(color,code,age)=>{
     if(code==1 && age==5){
         console.log("a "+color+" used motorbike");
@@ -81,10 +82,26 @@ var vehicle=(color,age,model)=>{
 vehicle("green",3,1);
 
 // 10. Use the list of vehicles to write an advertisement. So that it prints something like: "Amazing Joe's Garage, we service cars, motorbikes, caravans and bikes.". (Hint: use a for loop.)
+function advertiseFunction(){
+var advertise = "Amazing Joe's Garage, we service";
+
+for(i=0; i < vehicles.length; i++){
+        if(i != (vehicles.length - 1)){       
+            advertise += " "+vehicles[i]+"s";
+        }
+        else{
+            advertise += " and "+vehicles[i]+"s";
+        }
+    }
+    console.log(advertise);
+}
+advertiseFunction();
 
 // 11. What if you add one more vehicle to the list, can you have that added to the advertisement without changing the code for question 7?
+vehicles.push("Sports car","Van");
+advertiseFunction();
 
-// Create an empty object
+// 12. Create an empty object
 var emptyObj = {};
 
 // Create a function that takes two objects as parameters and compares them. You will actually need to write two functions — one that compares with == and one that compares with ===. Remember that objects can have objects inside of them so you'll need to find a way to compare every element of every object (types and values). For example:
