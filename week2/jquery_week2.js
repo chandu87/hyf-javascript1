@@ -1,0 +1,78 @@
+console.log("step 2");
+
+$(document).ready(function()
+    {   
+        // hiding all containers
+        $("#question_one").hide();
+        $("#question_two").hide();
+        $("#question_three").hide();
+        $("#question_four").hide();
+        $("#question_five").hide();
+        $("#question_six").hide();
+        $("#question_seven").hide();
+        $("#question_eight").hide();
+        $("#question_nine").hide();
+        $("#question_ten").hide();
+        $("#question_eleven").hide();
+        $("#question_twelve").hide();
+        $("#question_thirteen").hide();
+        $("#question_fourteen").hide();
+        $("#question_fifteen").hide();
+        $("#question_sixteen").hide();
+        $("#question_seventeen").hide();
+
+            //slidetoggle for containers
+            $("#questionone_heading").click(function(){
+                $("#question_one").slideToggle();
+            });
+            $("#questiontwo_heading").click(function(){
+                $("#question_two").slideToggle();
+            });
+            $("#questionthree_heading").click(function(){
+                $("#question_three").slideToggle();
+            });
+            $("#questionfour_heading").click(function(){
+                $("#question_four").slideToggle();
+            });
+            $("#questionfive_heading").click(function(){
+                $("#question_five").slideToggle();
+            });
+            $("#questionsix_heading").click(function(){
+                $("#question_six").slideToggle();
+            });
+            $("#questionseven_heading").click(function(){
+                $("#question_seven").slideToggle();
+            });
+            $("#questioneight_heading").click(function(){
+                $("#question_eight").slideToggle();
+            });
+            $("#questionnine_heading").click(function(){
+                $("#question_nine").slideToggle();
+            });
+            $("#questionten_heading").click(function(){
+                $("#question_ten").slideToggle();
+            });
+            $("#questioneleven_heading").click(function(){
+                $("#question_eleven").slideToggle();
+            });
+            $("#questiontwelve_heading").click(function(){
+                $("#question_twelve").slideToggle();
+            });
+            $("#questionthirteen_heading").click(function(){
+                $("#question_thirteen").slideToggle();
+            });
+            $("#questionfourteen_heading").click(function(){
+                $("#question_fourteen").slideToggle();
+            });
+            $("#questionfifteen_heading").click(function(){
+                $("#question_fifteen").slideToggle();
+            });
+            $("#questionsixteen_heading").click(function(){
+                $("#question_sixteen").slideToggle();
+            });
+            $("#questionseventeen_heading").click(function(){
+                $("#question_seventeen").slideToggle();
+            });
+                        
+    }
+);
