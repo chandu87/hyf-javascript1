@@ -73,7 +73,7 @@ $(document).ready(function()
             $("#questionseventeen_heading").click(function(){
                 $("#question_seventeen").slideToggle();
             });
-            $("button").click(function(){
+            $("#week2-btn").click(function(){
                 window.location.href="week2.html";
             });
                         
