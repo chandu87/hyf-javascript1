@@ -73,6 +73,9 @@ $(document).ready(function()
             $("#questionseventeen_heading").click(function(){
                 $("#question_seventeen").slideToggle();
             });
+            $("button").click(function(){
+                window.location.href="week2.html";
+            });
                         
     }
 );
