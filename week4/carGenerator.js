@@ -34,5 +34,19 @@ function generateCars(numberOfCars) {
 
     return cars;
 }
+function checkSpeed(car){
+    if(car.speed > 30 && car.speed < 60){
+        return car;
+    }
+}
 
+// Generate cars
+let arrayGeneratedCars = generateCars(10);
+console.log("Array of Generated cars")
 console.log(generateCars(10));
+
+//check car speed between 30 and 60
+let mediumSpeedCars = arrayGeneratedCars.filter(checkSpeed);
+console.log("Array of cars speed between 30 and 60 ");
+console.log(mediumSpeedCars);
+
