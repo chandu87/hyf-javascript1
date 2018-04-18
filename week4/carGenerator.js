@@ -2968,7 +2968,7 @@ var array = JSON.parse(JSON.stringify([
   console.log("Third repositary name is -------->>> " + array[2].name);
 
   let listUl = document.querySelector('#ul-list');
-  let containerProp = document.querySelector("#dispForks");  
+  let containerProp = document.querySelector("#disp-properties");  
 
   for(let i = 0; i < array.length; i++){
       let exist = moduleExisted(array[i].name);
@@ -2976,7 +2976,6 @@ var array = JSON.parse(JSON.stringify([
         displayContent(array[i]); 
       }
   }
-
 
 function moduleExisted(moduleName){
     for(i = 0; i < curriculumModules.length; i++){
@@ -2986,14 +2985,13 @@ function moduleExisted(moduleName){
     }
 }
 function displayContent(module){
-
   let listItem = document.createElement('li');
   listItem.textContent = module.name;
   listUl.appendChild(listItem);
-
   let moduleProp = document.createElement("p");
   moduleProp.textContent = module.name;
   let displayList = ["watchers","forks","stargazers_count","language"];
+ 
   for(let i = 0; i < displayList.length; i++){
     let listItem = document.createElement('li');
     listItem.textContent = displayList[i] + " : " + module[displayList[i]];
