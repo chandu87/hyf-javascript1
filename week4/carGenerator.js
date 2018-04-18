@@ -2964,13 +2964,30 @@ var array = JSON.parse(JSON.stringify([
   ]
   ));
 
+  let curriculumModules = ['HTML-CSS','Node.js','JavaScript1','Git','CommandLine','Project','databases','curriculum','React','masterclass-react-redux'];
   console.log("Third repositary name is " + array[2].name);
 
-  var listUl = document.querySelector('#ul-list');
+  let listUl = document.querySelector('#ul-list');
+  let listUl2 = document.querySelector('#ul-list2');
   
 
   for(let i = 0; i < array.length; i++){
+      console.log(array[i].name);
+      let exist = moduleExisted(array[i].name);
+      if(exist){
       let listItem = document.createElement('li');
       listItem.textContent = array[i].name;
       listUl.appendChild(listItem);
+      let listItem2 = document.createElement('li');
+      listItem2.textContent = array[i].forks;
+      listUl2.appendChild(listItem2);
+      listUl.appendChild(listItem);
+    }
   }
+function moduleExisted(moduleName){
+    for(i = 0; i < curriculumModules.length; i++){
+        if(moduleName == curriculumModules[i]){
+            return true;
+        }
+    }
+}
