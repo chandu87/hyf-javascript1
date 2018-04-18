@@ -2965,29 +2965,48 @@ var array = JSON.parse(JSON.stringify([
   ));
 
   let curriculumModules = ['HTML-CSS','Node.js','JavaScript1','Git','CommandLine','Project','databases','curriculum','React','masterclass-react-redux'];
-  console.log("Third repositary name is " + array[2].name);
+  console.log("Third repositary name is -------->>> " + array[2].name);
 
   let listUl = document.querySelector('#ul-list');
-  let listUl2 = document.querySelector('#ul-list2');
-  
+  let containerProp = document.querySelector("#dispForks");  
 
   for(let i = 0; i < array.length; i++){
-      console.log(array[i].name);
       let exist = moduleExisted(array[i].name);
       if(exist){
-      let listItem = document.createElement('li');
-      listItem.textContent = array[i].name;
-      listUl.appendChild(listItem);
-      let listItem2 = document.createElement('li');
-      listItem2.textContent = array[i].forks;
-      listUl2.appendChild(listItem2);
-      listUl.appendChild(listItem);
-    }
+        displayContent(array[i]); 
+      }
   }
+
+
 function moduleExisted(moduleName){
     for(i = 0; i < curriculumModules.length; i++){
         if(moduleName == curriculumModules[i]){
             return true;
         }
     }
+}
+function displayContent(module){
+
+  let listItem = document.createElement('li');
+  listItem.textContent = module.name;
+  listUl.appendChild(listItem);
+
+  let moduleProp = document.createElement("p");
+  moduleProp.textContent = module.name;
+  
+  let listItem2 = document.createElement('li');
+  listItem2.textContent = "Watchers : " + module.watchers;
+  moduleProp.appendChild(listItem2);
+  let listItem3 = document.createElement('li');
+  listItem3.textContent = "Forks : " + module.forks;
+  moduleProp.appendChild(listItem3);
+  let listItem4 = document.createElement('li');
+  listItem4.textContent = "stargazers_count : " + module.stargazers_count;
+  moduleProp.appendChild(listItem4);
+  let listItem5 = document.createElement('li');
+  listItem5.textContent = "Language : " + module.language;
+  moduleProp.appendChild(listItem5);
+
+  containerProp.appendChild(moduleProp);
+
 }

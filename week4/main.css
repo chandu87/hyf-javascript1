@@ -1,0 +1,9 @@
+.flex-container{
+    display: flex;
+}
+#dispModules, #dispForks{
+    padding:10px;
+    width:40%;
+    border: 2px solid burlywood;
+    margin:2px;
+}
