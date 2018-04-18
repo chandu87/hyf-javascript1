@@ -2993,20 +2993,12 @@ function displayContent(module){
 
   let moduleProp = document.createElement("p");
   moduleProp.textContent = module.name;
-  
-  let listItem2 = document.createElement('li');
-  listItem2.textContent = "Watchers : " + module.watchers;
-  moduleProp.appendChild(listItem2);
-  let listItem3 = document.createElement('li');
-  listItem3.textContent = "Forks : " + module.forks;
-  moduleProp.appendChild(listItem3);
-  let listItem4 = document.createElement('li');
-  listItem4.textContent = "stargazers_count : " + module.stargazers_count;
-  moduleProp.appendChild(listItem4);
-  let listItem5 = document.createElement('li');
-  listItem5.textContent = "Language : " + module.language;
-  moduleProp.appendChild(listItem5);
-
+  let displayList = ["watchers","forks","stargazers_count","language"];
+  for(let i = 0; i < displayList.length; i++){
+    let listItem = document.createElement('li');
+    listItem.textContent = displayList[i] + " : " + module[displayList[i]];
+    moduleProp.appendChild(listItem);    
+  }
   containerProp.appendChild(moduleProp);
 
 }
